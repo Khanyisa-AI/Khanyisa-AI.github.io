@@ -7,16 +7,19 @@
 html {
   scroll-behavior: smooth;
 }
-body{
+body {
   background-image: url('back.jpg');
 }
+
 .navbar {
-  display: grid;
-  justify-content: center;
-  align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
   position: sticky;
   top: 0;
+  width: 100%;
+  margin: auto;
 }
 .navbar ul {
   display: flex;
@@ -46,6 +49,7 @@ body{
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.5);
+  background: url('back.jpg');
   height: 840px;
   justify-content: center;
   align-items: center;
@@ -106,12 +110,9 @@ body{
   padding: 20px;
   margin-bottom: 50px;
 }
-#pic {
-  display: flex;
-}
 
 #intro {
-  display: flex;
+  display: grid;
   flex-direction: column;
   text-align: justify;
   padding: 10px;
