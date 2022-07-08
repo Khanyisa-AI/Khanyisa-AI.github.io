@@ -7,9 +7,6 @@
 html {
   scroll-behavior: smooth;
 }
-body {
-  background-image: url('back.jpg');
-}
 
 .navbar {
   background-color: rgba(0, 0, 0, 0.5);
@@ -49,7 +46,6 @@ body {
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.5);
-  background: url('back.jpg');
   height: 840px;
   justify-content: center;
   align-items: center;
@@ -61,7 +57,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  background: url('back.jpg') no-repeat center center/cover;
+  background: url(bg.jfif) no-repeat center center/cover;
   height: 900px;
   width: 100%;
   z-index: -1;
@@ -78,6 +74,7 @@ body {
 
 .headings {
   font-family: century;
+  text-decoration: none;
   font-size: 3rem;
   text-align: center;
   margin: 40px 0px;
@@ -104,24 +101,33 @@ body {
 /*About me*/
 
 #about {
-  display: flex;
+  display:flex;
   flex-direction: column;
+  margin: auto;
   box-sizing: border-box;
   padding: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
+  background: url(bg.jfif) no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.8;
+  
 }
 
 #intro {
   display: grid;
-  flex-direction: column;
   text-align: justify;
-  padding: 10px;
+  margin: auto;
+  width: 60%;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+  
 }
 
 #intro h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #000;
+  color: white;
 }
 
 /*portfolio*/
@@ -130,7 +136,7 @@ body {
   color: white;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.9);
-
+  background: url(bg.jfif) no-repeat center center/cover;
   align-items: center;
   padding: 20px;
 }
@@ -154,9 +160,16 @@ body {
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.9);
+  background: url(bg.jfif) no-repeat center center/cover;
   color: rgb(4, 4, 4);
   align-items: center;
   padding: 20px;
+}
+
+#skills h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: rgb(4, 4, 4);
 }
 
 .box {
@@ -187,8 +200,7 @@ body {
 }
 
 .row {
-  display: flex;
-  flex-direction: row;
+  display: grid;
   padding: 20px;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -199,6 +211,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.9);
+  background: url(bg.jfif) no-repeat center center/cover;
   color: rgb(4, 4, 4);
   align-items: center;
   padding: 20px;
@@ -220,7 +233,7 @@ body {
   background-position: left bottom;
   color: white;
   border: none;
-  box-shadow: 0 0 20px rgb(68, 2, 70);
+  size: 200%;
 }
 .social ion-icon {
   display: flex;
