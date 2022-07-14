@@ -63,8 +63,8 @@ html {
     display: grid;
   }
   .row {
-    display: flex;
-    flex-direction: row;
+    display: grid !important;
+
   }
 }
 
