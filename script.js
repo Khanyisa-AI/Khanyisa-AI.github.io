@@ -16,6 +16,7 @@ const handleclick = (evt) => {
       hambutton.classList.toggle('hide', false);
       menu.classList.remove('menuDisplay');
       closebutton.classList.toggle('display');
+      body.classList.remove('no-scroll');
     }
   }
 
@@ -24,6 +25,7 @@ const handleclick = (evt) => {
       menu.classList.remove('menuDisplay');
       hambutton.classList.toggle('hide', false);
       closebutton.classList.toggle('display', false);
+      body.classList.remove('no-scroll');
     }
   }
 };
