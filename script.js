@@ -7,22 +7,23 @@ const handleclick = (evt) => {
   if (evt.target.id === 'hamId') {
     menu.classList.add('menuDisplay');
     body.classList.add('no-scroll');
-    hambutton.classList.toggle('hide')
-    closebutton.classList.toggle('display')
+    hambutton.classList.toggle('hide');
+    closebutton.classList.toggle('display');
   }
 
   if (evt.target.id === 'list') {
     if (menu.classList.contains('menuDisplay')) {
-      hambutton.classList.toggle('hide',false)
+      hambutton.classList.toggle('hide', false);
       menu.classList.remove('menuDisplay');
+      closebutton.classList.toggle('display');
     }
   }
 
   if (evt.target.id === 'closeId') {
     if (menu.classList.contains('menuDisplay')) {
       menu.classList.remove('menuDisplay');
-      hambutton.classList.toggle('hide',false)
-      closebutton.classList.toggle('display',false)
+      hambutton.classList.toggle('hide', false);
+      closebutton.classList.toggle('display', false);
     }
   }
 };
