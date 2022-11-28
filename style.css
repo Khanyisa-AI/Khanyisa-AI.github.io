@@ -1,13 +1,24 @@
-* {
+body{
+  display: grid;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(images/back.jpg) no-repeat center center fixed;
+  background-size: auto;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.9);
+  align-content: center;
 }
 
-
+body img{
+  height: 100%;
+  width: 100%;
+}
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   display: grid;
   grid-template-columns: auto;
   align-items: center;
@@ -61,8 +72,6 @@ div {
   .ham{
     display: flex;
   }
-
-
 
   .navbar {
     display: flex;
@@ -124,31 +133,9 @@ div {
 #home {
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 840px;
   justify-content: center;
   align-items: center;
   color: white;
-}
-
-#home::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: url(bg.jfif) no-repeat center center/cover;
-  height: 900px;
-  width: 100%;
-  z-index: -1;
-  opacity: 0.8;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  height: 400px;
 }
 
 .headings {
@@ -182,20 +169,13 @@ div {
 #about {
   display: flex;
   flex-direction: column;
-  margin: auto;
-  box-sizing: border-box;
-  padding: 20px;
-  margin-bottom: 0px;
-  background: url(bg.jfif) no-repeat center center/cover;
 }
 
 #intro {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   text-align: justify;
-  margin: auto;
-  width: 60%;
   justify-content: center;
-  padding: 20px;
   color: white;
 }
 
@@ -210,8 +190,6 @@ div {
   display: flex;
   color: white;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.9);
-  background: url(bg.jfif) no-repeat center center/cover;
   align-items: center;
   padding: 20px;
 }
@@ -235,7 +213,6 @@ div {
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.9);
-  background: url(bg.jfif) no-repeat center center/cover;
   color: rgb(4, 4, 4);
   align-items: center;
   padding: 20px;
@@ -287,7 +264,6 @@ div {
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.9);
-  background: url(bg.jfif) no-repeat center center/cover;
   color: rgb(4, 4, 4);
   align-items: center;
   padding: 20px;
@@ -303,7 +279,6 @@ div {
   align-items: center;
   border-radius: 15px;
   padding: 10px;
-  background-size: 100% 200%;
 }
 
 .icons:hover {
@@ -317,4 +292,11 @@ div {
   height: 50px;
   margin: 10px;
   color: aliceblue;
+}
+
+.section {
+  height: auto;
+  width: 70%;
+  margin: 30px;
+  border-radius: 10px;
 }

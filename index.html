@@ -1,111 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta name="viewport"content="width=device-width,initial-scale=1.0">
-      <title></title>
-      <link rel="stylesheet"href="style.css">
-      <link rel="stylesheet" href="fontawesome/css/all.css">
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Personal website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a class="list" href="#home"> Home </a></li>
+        <li><a class="list" href="#about"> About Me </a></li>
+        <li><a class="list" href="#skills"> Skills </a></li>
+        <li><a class="list" href="#portfolio"> Portfolio </a></li>
+        <li><a class="list" href="#contact"> Contacts</a></li>
+      </ul>
+      <div class="ham">
+        <ion-icon name="menu-outline" id="hamId"></ion-icon>
+      </div>
+      <div class="close">
+        <ion-icon name="close-outline" class="close" id="closeId"></ion-icon>
+      </div>
+    </nav>
 
-            <nav class="navbar">
-                  <ul >
-                        <li><a id="list" href="#home"> Home </a></li>
-                        <li><a id="list" href="#about"> About Me </a></li>
-                        <li><a id="list" href="#skills"> Skills </a></li>
-                        <li><a id="list" href="#portfolio"> Portfolio </a></li>
-                        <li><a id="list" href="#contact"> Contacts</a></li>
-                  </ul>
-                  <div class="ham">
-                        <ion-icon name="menu-outline" id="hamId"></ion-icon>
-                        
-                  </div>
-                  <div class="close">
-                        <ion-icon name="close-outline" class="close"  id="closeId"></ion-icon>
-                  </div>
-            </nav>
-      
+    <div class="section" id="home">
+      <div class="main">
+        <h1 class="headings">Khanyisa Mhlarhi</h1>
+        <a href="CV_Mhlarhi_Khanyisa.pdf" target="_blank"></a>
+        <button class="btn">Download CV</button>
+      </div>
+    </div>
 
-       <section id="home">
-              <div class="main">
-                     <h1 class="headings"> Khanyisa Mhlarhi</h1>
-                     <a href="CV-Mhlarhi Khanyisa.pdf" target="_blank"><button class="btn" onclick=""> Download CV</button></a>
-                     
-              </div>
-       </section>
+    <div class="section" id="intro">
+      <h1 class="headings">ABOUT ME</h1>
+      <h2 class="headings">Khanyisa Mhlarhi</h2>
+      <p>
+        I am an aspiring Web developer who enjoys connecting the dots, be it
+        ideas from different disciplines, people from different teams, or
+        applications from different industries. I am currently building strong
+        technical skills in software engineering and machine learning. My
+        passion lies in solving business problems with tailored web applications
+        and data algorithms.
+      </p>
+    </div>
 
-      <section id="about">
-            
-                  <div id="intro">
-                        <h1 class="headings">ABOUT ME </h1>
-                        <h2 class="headings"> Khanyisa <br> Mhlarhi</h2>
-                        <p>I am an aspiring Web developer who enjoys connecting the dots, 
-                        be it ideas from different disciplines, people from different teams, 
-                        or applications from different industries. I am currently building strong 
-                        technical skills in software engineering and machine learning.
-                        My passion lies in solving business problems with tailored 
-                        web applications and data algorithms.</p>
-                   </div>
-      </section>
+    <div class="section" id="portfolio">
+      <h1 class="headings">PORTFOLIO</h1>
+      <div class="row">
+        <div class="gallery">
+          <img src="images/pot.jpg" alt="">
+        </div>
+      </div>
+    </div>
 
-      <section id="portfolio">
-            <h1 class="headings">PORTFOLIO</h1>
-            <div class="row">
-                  <div class="gallery">
-                        <img src="pot.jpg" alt="">
-                  </div>
-            </div>
-            
-      </section>
+    <div class="section" id="skills">
+      <h1 class="headings">SKILLS</h1>
+      <div class="row">
+        <div class="box">
+          <h2 class="headings">HTML</h2>
+          <img src="images/html2.png" alt="">
+        </div>
+        <div class="box">
+          <h2 class="headings">JS</h2>
+          <img src="images/js2.jfif" alt="">
+        </div>
+        <div class="box">
+          <h2 class="headings">CSS</h2>
+          <img src="images/css1.png" alt="">
+        </div>
+      </div>
+    </div>
 
+    <div class="section" id="contact">
+      <h1 class="headings">CONTACT</h1>
+      <div class="row">
+        <div class="icons">
+          <a
+            class="social"
+            href="mailto:khanisamhlarhi@gmail.com"
+            target="_blank"
+          >
+            <ion-icon name="mail"></ion-icon>
+          </a>
+        </div>
+        <div class="icons">
+          <a
+            class="social"
+            href="https://www.facebook.com/khanyisalynneth.mhlarhi"
+            target="_blank"
+          >
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </div>
 
-      <section id="skills">
-            <h1 class="headings">SKILLS</h1>
-            <div class="row">
-                  
-                  <div class="box">
-                        <h2 class="headings">HTML</h2>
-                        <img src="html2.png" alt="">
-                  </div>
-                  <div class="box">
-                        <h2 class="headings">JS</h2>
-                        <img src="js2.jfif" alt="">
-                  </div>
-                  <div class="box">
-                        <h2 class="headings">CSS</Script></h2>
-                        <img src="css1.png" alt="">
-                  </div>
-            </div>
+        <div class="icons">
+          <a class="social" href="tel:0836734477" target="_blank">
+            <ion-icon name="call"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </div>
 
-      </section>
-
-      <section id="contact">
-            <h1 class="headings">CONTACT</h1>
-            <div class="row">
-                  
-                  <div class="icons">
-                        <a class="social" href="mailto:khanisamhlarhi@gmail.com" target="_blank">
-                              <ion-icon name="mail"></ion-icon>
-                        </a>
-                  </div>
-
-                  <div class="icons">
-                        <a class="social" href="https://www.facebook.com/khanyisalynneth.mhlarhi" target="_blank">
-                              <ion-icon name="logo-facebook"></ion-icon>
-                        </a>
-                  </div>
-
-                  <div class="icons">
-                        <a class="social" href="tel:0836734477" target="_blank">
-                              <ion-icon name="call"></ion-icon>
-                        </a>
-                  </div>
-            </div>
-      </section>
-
-      <script src="script.js"></script>
-</body>
+    <script src="src/script.js"></script>
+  </body>
 </html>
