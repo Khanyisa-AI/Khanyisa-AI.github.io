@@ -1,13 +1,9 @@
 
 const body = document.querySelector('body');
 const hamButton = document.querySelector('.ham');
-const closeButton = document.querySelector('.close');
 const cvButton = document.querySelector(".btn")
 const menuList = document.querySelectorAll('li')
 const menu = document.querySelector('.navbar ul');
-
-
-
 
 const handleClick = (evt) => {
   
@@ -29,9 +25,4 @@ const handleClick = (evt) => {
 
 };
 
-function downloadFile(){
-
-}
-
-closeButton.addEventListener('click', downloadFile)
 document.addEventListener('click', handleClick);
