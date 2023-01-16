@@ -17,12 +17,9 @@ const handleClick = (evt) => {
     if (menu.classList.contains('menuDisplay')) {
       hamButton.classList.toggle('hide', false);
       menu.classList.remove('menuDisplay');
-      closeButton.classList.toggle('display');
       body.classList.remove('no-scroll');
     }
   }
-
-
 };
 
 document.addEventListener('click', handleClick);
