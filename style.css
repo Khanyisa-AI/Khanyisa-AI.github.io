@@ -9,7 +9,7 @@ body {
   background-size: cover;
   z-index: -1;
   background-color: rgba(0, 0, 0, 0.9);
-  align-items: center;
+  
 }
 
 body img {
@@ -68,13 +68,12 @@ body img {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
+div{
+  display: grid;
+}
 
 .container{
-  display: grid !important;
-  grid-template:1fr /repeat(4,1fr) ;
-  place-self: center;
-  justify-content: center;
-  align-items: center;
+  display: grid !important
   
 }
 
@@ -149,8 +148,7 @@ body img {
 #home {
   font-size: larger;
   display: grid;
-  justify-content: left;
-  margin-left: 25px;
+  justify-content: center;
   align-items: center;
   color: white;
   height: 100%;
@@ -310,4 +308,8 @@ span {
 
 .ham{
   display: none;
+}
+a {
+  text-decoration: none;
+  text-align: center;
 }
