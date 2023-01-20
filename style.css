@@ -22,6 +22,7 @@ body img {
   display: grid;
   grid-template-columns: auto;
   align-items: center;
+  justify-items: auto;
   position: sticky;
   top: 0;
   width: 100%;
@@ -93,7 +94,7 @@ div{
   .navbar {
     display: flex;
     justify-content: flex-end;
-    justify-items: flex-end;
+    justify-items: center;
     z-index: 100;
   }
   .navbar ul li {
