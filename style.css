@@ -197,28 +197,58 @@ span {
 }
 
 /*portfolio*/
-#portfolio {
-  display: grid;
-  color: white;
-  align-items: center;
-  justify-items: center;
+
+#projects {
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 20px;
+  
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  box-sizing: border-box;
+.project {
+  margin: 10px;
+  width: 45%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  background-color: #161616;
 }
 
-.gallery img {
-  width: 100%;
-  height: auto;
-  margin: 0px;
+.project-image {
+  height: 200px; 
+  background-size: cover;
+  background-position: center;
 }
 
-/*Skills*/
+.project-details {
+  padding: 15px;
+  background-color: #333;
+}
+
+.project-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: white; 
+}
+
+.project-description {
+  font-size: 14px;
+  color: #ccc; 
+  margin-bottom: 10px;
+}
+
+.project-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #3498db; 
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.project-button:hover {
+  background-color: #217dbb;
+}
+
 
 #skills {
   display: flex;
